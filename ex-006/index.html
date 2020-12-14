@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,19 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="images/favicon.png">
 </head>
+
 <body>
-    
+    <h1>Salári Mensal</h1>
+    <form>
+        <label for="horas-Trabalhadas">Horas trabalhadas no mês</label><br>
+        <input type="number" id="horas-trabalhadas"><br>
+        <label for="valor-Hora">Valor por hora (R$)</label><br>
+        <input type="number" id="valor-hora">
+        <div id="resultado">Salário Mensal</div>
+        <button type="button" onclick="CalcularSalario();">Calcular Salário</button>
+    </form>
+
     <script src="js/funcoes.js"></script>
 </body>
+
 </html>
